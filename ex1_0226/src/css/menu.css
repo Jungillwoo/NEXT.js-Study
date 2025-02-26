@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #1f1f1f;
+}
+#header{
+    height: 44px;
+    background-color: #2e2e2e;
+}
+#nav{
+    list-style-type: none;
+    font: 13px Helveticpt;
+    line-height: 44px; /* font이후에 지정해야 정확한 연산이 수행 */
+    text-align: center;
+}
+#nav>li{
+    display: inline-block;
+    margin-right: 35px;
+}
+/* li태그 안에 있는 a태그를 선택하여 글꼴의 색을 흰색으로
+   지정하고, 밑줄을 없애*/
+#nav>li>a{
+    color: #eee;
+    text-decoration: none;
+}
+#apple{
+    background-image: url("../images/icon_apple.svg");
+    width: 14px;
+    background-size: 14px 44px;
+    position: absolute; /* 이미지의 위치를 절대적 위치로 지정한다는 의미 */
+    top: 0px;
+    background-repeat: no-repeat;
+}
+#nav>li>a:hover{
+    color: #fff;
+}

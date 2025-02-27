@@ -1,0 +1,15 @@
+.content {
+    font-size: 30px;
+    color: #fff;
+}
+
+.input-box {
+    height: 30px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}

@@ -1,0 +1,9 @@
+.header {
+  background-color: #ffcc80;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  background-color: #bbdefb;
+}

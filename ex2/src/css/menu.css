@@ -1,0 +1,33 @@
+nav {
+    background-color: #333;
+    padding: 15px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  .App {
+    background-color: #222;
+    padding-top: 60px; /* 네비게이션 높이만큼 페이지 콘텐츠를 아래로 내림 */
+    min-height: 100vh;
+  }
+  

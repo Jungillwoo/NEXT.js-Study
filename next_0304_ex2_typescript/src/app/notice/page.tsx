@@ -20,11 +20,12 @@ export default function Notice() {
     
     function setData() {
         axios.get<{ ar: NoticeItem[] }>(`/notice/list`).then((res) => {
+            //console.log(res);
             setAr(res.data.ar);
         });
     }
 
-    // 페이지가 열릴 때 한번 호출해라
+    //페이지가 열릴 때 한번 호출해라
     useEffect(() => {
         setData();
     });

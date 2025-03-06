@@ -8,7 +8,7 @@ export default function Page({
   }: {
     params: { id: string }
   }) {
-    const { id } = params
+    const { id } = params;
     // const idx = (await params).id;
     // const id = useParams();
 

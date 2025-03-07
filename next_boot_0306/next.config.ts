@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
       {
         source: "/board/:path*",
         destination: "http://localhost:8080/board/:path*"
+      },
+      {
+        source: "/member/:path*",
+        destination: "http://localhost:8080/member/:path*"
       }
     ];
   }

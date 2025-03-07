@@ -34,7 +34,7 @@ export default function Page() {
     const router = useRouter();
 
     return (
-        <div style={{ width: "80%", margin: "auto" }}>
+        <div style={{ width: "80%", margin: "20px auto", backgroundColor: '#f4f4f4' }}>
             <h2>게시판</h2>
             <Divider />
             <BoardTable posts={posts} />
@@ -43,7 +43,7 @@ export default function Page() {
                 sx={{ float: "right", marginTop: "10px" }}
                 onClick={() => {
                     // 글쓰기 화면 연결
-                    router.push("/write");
+                    router.push(`/write?cPage=${cPage}`);
                 }}>글쓰기</Button>
         </div>
     );

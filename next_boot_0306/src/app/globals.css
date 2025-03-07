@@ -22,6 +22,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;
 }
 
 * {
@@ -52,12 +53,12 @@ a {
 }
 
 .list-bg {
-  background: rgb(173, 175, 185);
+  background: #f4f4f4;;
   padding: 10px;
 }
 
 .list-item {
-  background: #ffffff;
+  background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 5px;

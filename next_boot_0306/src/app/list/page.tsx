@@ -4,6 +4,7 @@ import BoardTable from "@/component/boardTable";
 import CustomPagination from "@/component/pagination";
 import { Divider, Button } from "@mui/material";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 
@@ -15,7 +16,7 @@ export default function Page() {
     const [totalPage, setTotalPage] = useState(1);
 
     // 게시글 데이터 불러오기 함수
-    const fetchPosts = async (page: number) => {
+    const callData = async (page: number) => {
         try {
             const response = await axios.get(`${API_URL}&cPage=${page}`);
             setPosts(response.data.ar);
@@ -27,8 +28,10 @@ export default function Page() {
 
     // 첫 렌더링 시 실행
     useEffect(() => {
-        fetchPosts(cPage);
+        callData(cPage);
     }, [cPage]);
+
+    const router = useRouter();
 
     return (
         <div style={{ width: "80%", margin: "auto" }}>
@@ -36,7 +39,12 @@ export default function Page() {
             <Divider />
             <BoardTable posts={posts} />
             <CustomPagination cPage={cPage} totalPage={totalPage} onPageChange={setCPage} />
-            <Button variant="contained" color="primary" sx={{ float: "right", marginTop: "10px" }}>글쓰기</Button>
+            <Button variant="contained" color="primary" 
+                sx={{ float: "right", marginTop: "10px" }}
+                onClick={() => {
+                    // 글쓰기 화면 연결
+                    router.push("/write");
+                }}>글쓰기</Button>
         </div>
     );
 }

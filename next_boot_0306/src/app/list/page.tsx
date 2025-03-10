@@ -47,5 +47,6 @@ export default function Page() {
                 }}>글쓰기</Button>
         </div>
     );
+    
 }
 

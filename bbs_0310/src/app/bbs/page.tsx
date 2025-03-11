@@ -2,7 +2,9 @@
 
 import BbsTr from "@/component/bbsTr";
 import axios from "axios";
+import Link from "next/link";
 import { useEffect, useState } from "react";
+import styles from "../page.module.css";
 
 export default function Page() {
 
@@ -37,6 +39,13 @@ export default function Page() {
             <hr/>
             <table className="t1">
                 <thead>
+                    <tr>
+                        <td colSpan={5} className={styles.no_border}>
+                            <Link href="/bbs/write">
+                                <button type="button">글쓰기</button>
+                            </Link>
+                        </td>
+                    </tr>
                     <tr>
                         <th>번호</th>
                         <th>제목</th>

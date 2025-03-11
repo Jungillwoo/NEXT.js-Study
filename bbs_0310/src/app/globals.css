@@ -73,7 +73,7 @@ table.t1 {
 .t1 td {
   border: 1px solid #ddd;
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 /* 짝수 행 배경색 */

@@ -105,3 +105,24 @@ table.t1 {
   }
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navBar, .fr {
+  padding: 20px;
+}
+
+.navBar, .fr a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.fr {
+  position: fixed;
+  right: 0;
+}

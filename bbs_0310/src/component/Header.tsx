@@ -50,6 +50,7 @@ export default function Header() {
                     :<a href="#" onClick={logout}>Logout</a>
                 }
                 <Link href="/member/signup">Signup</Link>
+                
             </div>
         </header>
     );
